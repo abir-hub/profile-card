@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+img{
+  border-width: thick;
+  border-color: #fff;
+  border-radius: 100%;
+}
+.main{
+  background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg),linear-gradient(hsl(185, 75%, 39%),hsl(185, 75%, 40%));
+  background-size: contain, 70%, cover;
+  background-position: top -300px left -100px, right -250px bottom -700px,center;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+.box{
+  height: 400px;
+  width: 380px;
+  border-radius: 25px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.victor{
+  border: 6px solid #fff;
+  border-radius: 100%;
+  position: relative;
+  top: 38%; left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+
+}
+.intro{
+  position: relative;
+  top: 37%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  text-align: center;
+  color:hsl(229, 23%, 23%);
+}
+span{
+  margin: 10px;
+}
+.name{
+  font-weight: 700;
+  line-height: 2.3;
+}
+.age{
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+.place{
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+hr{
+  position: relative;
+  top: 32%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(227, 10%, 46%);
+  opacity: 30%;
+}
+
+.about{
+  position: relative;
+  top: 42%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about_number{
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  color:hsl(229, 23%, 23%);
+}
+.about_name{
+  color:hsl(0, 0%, 59%);
+  letter-spacing: 1.7px;
+  font-size: 13px;
+}
+table{
+  text-align:center;
+  margin: 0 auto 0 auto;
+}
+td{
+  padding: 0 30px 0 30px;
+}
+
+/* mobile version */
+@media only screen and (max-width: 376px){
+  .box{
+    width: 350px;
+  }
+  .main{
+    background-position: top -230px left -150px, right -150px bottom -200px,center;
+  }
+}
